@@ -1,22 +1,30 @@
-.account-login {width: 30%;background: #fff;border-radius: 10px;display: table-cell;}
-.account-login form{padding: 25px;}   
-.account-login h3{margin: 0}
-
-.account-login .form-btn{border-radius: 100px;border:1px solid #ddd;}
-.brdr{position: relative;}
+.account-login {background: #fff;border-radius: 10px;}
+.account-login form{padding: 25px;width: 350px}   
+.account-login h3{margin: 0;font-size: 24px;}
+.account-login .form-group{margin-bottom: 20px;}
+.account-login .form-btn.btn-success{color: #fff;border: none}
+.account-login .form-btn{border: 1px solid #1668e2;padding: 6px;
+    color: #1668e2;border-radius: 100px;}
+.brdr{position: relative;color: rgb(0 0 0 / 25%);}
 .brdr::after {
     content: "";
     position: absolute;
     border-bottom: 1px solid #ddd;
-    width: 125px;
-    height: 10px;
+    width: 45%;
+    height: 12px;
     margin-left: 15px;
 }
+
 .brdr::before {
     content: "";
     position: absolute;
     border-bottom: 1px solid #ddd;
-    width: 125px;
-    height: 10px;
-    left: 10px;
+    width: 45%;
+    height: 12px;
+    left: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+ .account-login form{width: 100%}
+ .account-login h3{font-size: 16px;}
 }
